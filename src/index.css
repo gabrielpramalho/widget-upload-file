@@ -17,4 +17,18 @@
 	--opacity-2: 0.02;
 
   --text-xxs: 0.625rem;
+
+	--animate-border: border 2s linear infinite;
+
+	@keyframes border {
+    to {
+      --border-angle: 360deg
+    }
+  }
+}
+
+@property --border-angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
 }
