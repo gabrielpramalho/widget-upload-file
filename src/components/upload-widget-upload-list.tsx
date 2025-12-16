@@ -46,7 +46,11 @@ export function UploadWidgetUploadList() {
 						{Array.from(uploads.entries()).map(([uploadId, upload]) => {
 							return (
 								<motion.div key={uploadId} variants={itemVariants} layout>
-									<UploadWidgetUploadItem key={uploadId} upload={upload} />
+									<UploadWidgetUploadItem
+										key={uploadId}
+										upload={upload}
+										uploadId={uploadId}
+									/>
 								</motion.div>
 							)
 						})}
